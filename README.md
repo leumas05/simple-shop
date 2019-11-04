@@ -47,5 +47,14 @@ Products added to the basket must be deducted from the shop quantity.
 When the user removes a product from the basket the user must be prompted for the identity and the quantity to remove.
 Removed items must be returned back to the shop.
 
+## Product
+An instance of a `Product` represents a single product, e.g a  radio.  
+It has a unique ID, name, price and quantity in stock.
+
+## Shop
+The shop contains _n_ number or products.  
+It must be able to add `Product` instances to the shop (done at startup of `Main`).  
+It must also be possible to list what products there are in the shop and add _n_ quantities of the product to the `Basket`.
+
 # Run the shop
 Run the command `sbt run` in a terminal
